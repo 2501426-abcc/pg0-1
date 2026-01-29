@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>学習記録管理アプリ</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" type="text/javascript" charset="UTF-8"></script>
+</head>
+<body>
+    <div id="main-div">
+        <header>
+            <h1>Study Tracker</h1>
+        </header>
+        <section class="input-form">
+            <input type="text" id="subject" placeholder="学習内容（例：HTML基礎）">
+            <div class="input-row">
+                <input type="number" id="time" placeholder="時間 (分)" min="0">
+                <input type="text" id="category" placeholder="教科">
+            </div>
+            <button id="add-btn">記録を追加する</button>
+            <button id="del-btn">記録を削除する</button>
+        </section>
+        <section class="log-container">
+            <h2 id="logs-number">最近の学習記録</h2>
+            <div id="log-list"></div>
+        </section>
+    </div>
+</body>
+</html>
