@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const result = confirm('すべての最新の学習記録が削除されます。\n本当に削除しますか？');
         if(result){
             localStorage.clear();
-            
+            logList.innerHTML = "";            
         }
     });
     
